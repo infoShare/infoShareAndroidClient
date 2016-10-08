@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="220dp"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@color/gray_light"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="205dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:background="@android:color/black" >
+
+        <RelativeLayout
+            android:layout_width="203dp"
+            android:layout_height="173dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@color/gray_light" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/categoryName"
+                style="@style/FormFont"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/categoryName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:inputType="text"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/addCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoryName"
+                android:layout_centerHorizontal="true"
+                android:text="@string/addCategory"
+                android:background="@drawable/blue_button"
+                style="@style/ButtonText"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/SmallFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/frameLayout1"
+        android:layout_alignStart="@+id/frameLayout1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-10dp"
+        android:background="@color/gray_light"
+        android:text="@string/addCategory" />
+
+</RelativeLayout>

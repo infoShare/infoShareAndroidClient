@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/addCategory"
+          android:title="@string/addCategory"/>
+    <item android:id="@+id/changeCategory"
+          android:title="@string/changeCategory" />
+    <item android:id="@+id/settings"
+          android:title="@string/settings" 
+          android:enabled="false"/>
+    <item android:id="@+id/reportProblem"
+          android:title="@string/reportProblem" />
+    <item android:id="@+id/logout"
+          android:title="@string/logout" />
+</menu>

@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/informationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.infoshare.pages.InformationActivity" >
+
+    <LinearLayout
+        android:id="@+id/pageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray_light"
+        android:weightSum="1" >
+
+        <com.infoshare.components.BackButton
+            style="@style/TitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.3"
+            android:drawableLeft="@drawable/arrow_left"
+            android:drawablePadding="-10dp"
+            android:drawableStart="@drawable/arrow_left"
+            android:gravity="center_vertical"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/information" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="0.2"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_small" />
+    </LinearLayout>
+
+    <View
+        style="@color/gray_light"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/pageHeader"
+        android:layout_alignLeft="@id/pageHeader"
+        android:layout_alignStart="@id/pageHeader"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/pageHeader"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/info" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/author"
+            style="@style/FormFont" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            style="@style/MediumFont"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/infoDate"
+            style="@style/FormFont"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            style="@style/MediumFont"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            style="@style/FormFont"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            style="@style/MediumFont"/>
+
+    </LinearLayout>
+
+    <View
+        style="@color/gray_light"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/info"
+        android:layout_alignLeft="@id/info"
+        android:layout_alignStart="@id/info"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+        
+        <TextView
+            style="@style/TitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.33"
+            android:drawableTop="@android:drawable/ic_menu_info_details"
+            android:gravity="center"
+            android:text="@string/report" 
+            android:onClick="report"/>
+
+        <TextView
+            android:id="@+id/editTV"
+            style="@style/TitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.33"
+            android:drawableTop="@android:drawable/ic_menu_edit"
+            android:gravity="center"
+            android:text="@string/edit" 
+            android:onClick="edit"/>
+
+        <TextView
+            android:id="@+id/deleteTV"
+            style="@style/TitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.33"
+            android:text="@string/delete"
+            android:gravity="center"
+            android:drawableTop="@android:drawable/ic_menu_delete"
+            android:onClick="delete" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shareInfoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.infoshare.pages.ShareInfoActivity" >
+
+    <LinearLayout
+        android:id="@+id/pageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray_light"
+        android:weightSum="1" >
+
+        <com.infoshare.components.BackButton
+            style="@style/TitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.3"
+            android:drawableLeft="@drawable/arrow_left"
+            android:drawablePadding="-10dp"
+            android:drawableStart="@drawable/arrow_left"
+            android:gravity="center_vertical"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/share" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="0.2"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_small" />
+    </LinearLayout>
+
+    <View
+        style="@color/gray_light"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/pageHeader"
+        android:layout_alignLeft="@id/pageHeader"
+        android:layout_alignStart="@id/pageHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/FormFont"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageHeader"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/infoContent" />
+
+    <EditText
+        android:id="@+id/infoContent"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/shareButton"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoContent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blue_button"
+        android:onClick="share"
+        android:text="@string/share" />
+
+</RelativeLayout>

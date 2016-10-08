@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InfoShare</string>
+	<string name="version">Version 1.0.0</string>
+	
+	<!-- Pages -->
+	<string name="splashPage">Splash Page</string>
+	<string name="loginPage">Login Page</string>
+	<string name="registerPage">Register Page</string>
+	<string name="resetPasswordPage">Reset Password Page</string>
+	<string name="reportProblemPage">Report Problem Page</string>
+	<string name="shareInfoPage">Share Info Page</string>
+	<string name="editInfoPage">Edit Info Page</string>
+	<string name="mainPage">Main Page</string>
+	<string name="informationPage">Information Page</string>
+	
+	<!-- Labels -->
+	<string name="emailAddress">E-mail address</string>
+	<string name="password">Password</string>
+	<string name="confirmPassword">Confirm password</string>
+	<string name="rememberMe">Remember me</string>
+	<string name="login">Login</string>
+	<string name="register">Register</string>
+	<string name="forgotPassword"><u>Forgot password ?</u></string>
+	<string name="back">Back</string>
+	<string name="resetPassword">Password reset</string>
+	<string name="reset">Reset</string>
+	<string name="reportProblem">Report a problem</string>
+	<string name="send">Send</string>
+	<string name="problemDescription">Problem description</string>
+	<string name="infoContent">Information content</string>
+	<string name="share">Share</string>
+	<string name="editInfo">Edit information</string>
+	<string name="update">Update</string>
+	<string name="infoHeader">Information\n(click to display)</string>
+	<string name="infoDate">Date</string>
+	<string name="information">Information</string>
+	<string name="author">Author</string>
+	<string name="content">Content</string>
+	<string name="report">Report</string>
+	<string name="edit">Edit</string>
+	<string name="delete">Delete</string>
+	<string name="noCategory">No category</string>
+	<string name="categoryName">Category name</string>
+	
+	<!-- Menu -->
+	<string name="addCategory">Add category</string>
+	<string name="changeCategory">Change category</string>
+	<string name="settings">Settings</string>
+	<string name="logout">Logout</string>
+	
+	<!-- Modals -->
+	<string name="alertTitle">Alert</string>
+	<string name="warningTitle">Warning</string>
+	<string name="exitTitle">Exit</string>
+	<string name="exitMessage">Are you sure you want to exit?</string>
+	<string name="logoutTitle">Logout</string>
+	<string name="logoutMessage">Are you sure you want to logout?</string>
+	<string name="updateTitle">Update</string>
+	<string name="updateMessage">Are you sure you want to update this information?</string>
+	<string name="deleteTitle">Delete</string>
+	<string name="deleteMessage">Are you sure you want to delete this information?</string>
+	<string name="reportTitle">Report</string>
+	<string name="reportMessage">Are you sure you want to report this information?</string>
+	<string name="reportConfirmation">Information was successfully reported !</string>
+	<string name="shareTitle">Share</string>
+	<string name="shareMessage">Are you sure you want to share this information?</string>
+	<string name="refreshTitle">Refreshing</string>
+	<string name="refreshMessage">Please wait &#8230;</string>
+	<string name="addCategoryTitle">Adding category</string>
+	<string name="addCategoryMessage">Are you sure you want to add this category?</string>	
+	<string name="changeCategoryTitle">Changing category</string>
+	<string name="changeCategoryMessage">Are you sure you want to change category?</string>		
+	<string name="verificationPending">Your information if waiting for admin verification</string>
+	
+	<!-- Authentication -->
+	<string name="authenticationStatus">Authentication status</string>
+	<string name="notRegistered">User not registered</string>		
+	<string name="notConfirmed">User is not confirmed, please check your email for confirmation</string>		
+	<string name="wrongCredentials">Wrong credentials provided</string>		
+	
+	<!-- Registration -->
+	<string name="registrationStatus">Registration status</string>
+	<string name="passwordDifferent">The password and its confirm are not the same</string>		
+	<string name="detailsNotProvided">Email and password musi be provided</string>	
+	<string name="registered">Registered successfully. Please check your email for confirmation</string>	
+	<string name="alreadyRegistered">Email is already registered, please use "Forgot password" option to remind password</string>			
+			
+	<!-- Web Service -->
+	<string name="connectingToServer">Connecting to server</string>		
+	<string name="pleaseWait">Please wait</string>		
+	
+	<!-- Others -->
+	<string name="toast">Toast</string>
+	<string name="menu">Menu</string>
+    
+</resources>

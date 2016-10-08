@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.infoshare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" 
+        android:logo="@drawable/logo">
+        <activity
+            android:name=".pages.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".pages.LoginActivity" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" 
+            android:label="@string/loginPage"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity 
+            android:name=".pages.RegisterActivity" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" 
+            android:label="@string/registerPage"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity 
+            android:name=".pages.ResetPasswordActivity" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" 
+            android:label="@string/resetPasswordPage"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity 
+            android:name=".pages.ReportProblemActivity" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" 
+            android:label="@string/reportProblemPage"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity 
+            android:name=".pages.ShareInfoActivity" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" 
+            android:label="@string/shareInfoPage"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity 
+            android:name=".pages.EditInfoActivity" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" 
+            android:label="@string/editInfoPage"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity 
+            android:name=".pages.MainActivity" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" 
+            android:label="@string/mainPage"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity 
+            android:name=".pages.InformationActivity" 
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" 
+            android:label="@string/informationPage"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+    </application>
+
+</manifest>
